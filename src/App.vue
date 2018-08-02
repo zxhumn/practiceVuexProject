@@ -38,9 +38,9 @@
             <div id="menu2" class="nav-box menuhd">
                 <ul>
                     <li class="index">
-                        <a href="#" class="">
+                        <router-link to="/index">                        
                             <span class="out" style="top: 0px;">首页</span>
-                        </a>
+                        </router-link>
                     </li>
                     <li class="news">
                         <a href="#" class="">
@@ -122,6 +122,7 @@
   import $ from 'jquery';
   export default{
     name:'app',
+    // hover上去的样式
     mounted:function(){
         $("#menu2 li a").wrapInner( '<span class="out"></span>' );
         $("#menu2 li a").each(function() {
